@@ -1,14 +1,14 @@
 public class Boleto extends Pagar {
-    private int cantidad;
-    public Boleto(String nombre, int numerodecuenta, int totalPagar, int cantidad) {
+    private double cantidad;
+    public Boleto(String nombre, int numerodecuenta, double totalPagar, double cantidad) {
         super(nombre, numerodecuenta, totalPagar);
         this.cantidad = cantidad;
     }
 
-    public int getCantidad() {
+    public double getCantidad() {
         return cantidad;
     }
-    public void setCantidad(int cantidad) {
+    public void setCantidad(double cantidad) {
         if (cantidad > 0 && cantidad <= 10) {
             this.cantidad = cantidad;
         } else {

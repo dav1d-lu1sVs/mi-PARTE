@@ -17,7 +17,7 @@ public class Main {
         System.out.print("Ingrese el número de cuenta : ");
         int numeroDeCuenta = sc.nextInt();
         System.out.print("Cuantos Boletos:  ");
-        int cantidad = sc.nextInt();
+        double cantidad = sc.nextInt();
 
 
         while (cantidad <= 0 || cantidad > 10) {
@@ -27,7 +27,7 @@ public class Main {
 
         double precioTotal = cantidad * selec.getPrecio();
 
-        Boleto boleto = new Boleto(nombreCliente, numeroDeCuenta, (int)precioTotal, cantidad);
+        Boleto boleto = new Boleto(nombreCliente, numeroDeCuenta, (double)precioTotal, cantidad);
         VentaFinal factura = new VentaFinal(boleto,selec);
 
         System.out.println("\n" + factura.generarFactura());

@@ -1,9 +1,9 @@
 public class Pagar {
     private String nombre;
     private int numerodecuenta;
-    private int totalPagar;
+    private double totalPagar;
 
-    public Pagar(String nombre, int numerodecuenta, int totalPagar) {
+    public Pagar(String nombre, int numerodecuenta, double totalPagar) {
         this.nombre = nombre;
         this.numerodecuenta = numerodecuenta;
         this.totalPagar = totalPagar;
@@ -25,11 +25,11 @@ public class Pagar {
         this.numerodecuenta = numerodecuenta;
     }
 
-    public int getTotalPagar() {
+    public double getTotalPagar() {
         return totalPagar;
     }
 
-    public void setTotalPagar(int totalPagar) {
+    public void setTotalPagar(double totalPagar) {
         this.totalPagar = totalPagar;
     }
     public String retornarDatos(){
